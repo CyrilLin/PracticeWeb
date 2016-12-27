@@ -1,0 +1,45 @@
+<nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" id="brand">&nbsp;</a>
+      <a class="navbar-brand" href="/">Practice</a>
+    </div>
+
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <% if current_user %>
+            <li><a href="/dashboard">面板</a></li>
+        <% end %>
+        <li><a href="/languages">语言</a></li>
+        <li><a href="/donate">赞助</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <% if current_user %>
+            <li><a href="/inbox">消息</a></li>
+            <li><a role="menuitem" tabindex="-1" href="/notifications"><i class="fa fa-bell"></i></a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" id="drop-account" href="#" data-toggle="dropdown">
+                <img alt="" src="https://avatars.githubusercontent.com/u/3804365?s=20" width="20" height="20">
+                <%= current_user.name %> <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a role="menuitem" tabindex="-1" href="<%= account_setting_path%>">账户</a></li>
+                <li><a role="menuitem" tabindex="-1" href="<%= account_key_path%>">API Key</a></li>
+                <li><a role="menuitem" tabindex="-1" href="/looks">已查看</a></li>
+                <li><a role="menuitem" tabindex="-1" href="<%= destroy_user_session_path %>">退出</a></li>
+              </ul>
+            </li>
+        <% else %>
+            <li><a href="/account/login">登录</a></li>
+            <li><a href="/account/register/sign_up">注册</a></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</nav>

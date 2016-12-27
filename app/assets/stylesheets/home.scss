@@ -1,0 +1,59 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.scss.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.home-top {
+  background-color: #D81D4E;
+  font-family: "Helvetica Neue", Helvetica, Arial, Sans-Serif, serif;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 10px 0 #f1f1f1;
+}
+
+.logo{
+  padding: 45px;
+  font-size: 60pt;;
+}
+
+.slogan {
+  color: lightgray;
+  size: 30px;
+}
+
+#home .summary{
+  padding: 20px 10px;
+  box-shadow: 0 5px 0 #f1f1f1;
+
+  p{
+    line-height: 30px;
+    font-size: 1.5em;
+    margin: 0.5em;
+
+    color: #333;
+  }
+}
+
+.feelz {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.content-primary p{
+  font-size: 1.3em;
+}
+
+.cta{
+  padding-left: 30%;
+  padding-top: 20px;
+
+  .cta-btn {
+    background-color: #d81d4e;
+    color: #FFF;
+
+    &:hover{
+      background-color: #ab173e;
+      color: #FFF;
+    }
+  }
+}

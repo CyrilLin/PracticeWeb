@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get 'account/key', to: 'account#key'
   get 'index', to: 'home#index'
   get '/', to: 'home#index'
+
+  resources :languages
 end

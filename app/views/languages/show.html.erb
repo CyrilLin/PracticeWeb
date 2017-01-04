@@ -1,0 +1,519 @@
+<div class="container">
+
+  <div class="row" style="padding-top: 20px; padding-left: 30px">
+    <h3><a class="redLink" href="<%= languages_path %>">语言</a> >> <%= @language.name %></h3>
+  </div>
+
+  <div class="row" style="padding-top: 20px;">
+    <aside role="complementary">
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked">
+          <li class="">
+            <a  class="redLink" href="/languages/ruby/about">
+              About the Ruby Track
+            </a>
+          </li>
+
+          <li class="active">
+            <a class="redLink" href="/languages/ruby/exercises">
+              Available Exercises
+            </a>
+          </li>
+
+          <li class="">
+            <a class="redLink" href="/languages/ruby/installing">
+              Installing Ruby
+            </a>
+          </li>
+
+          <li class="">
+            <a class="redLink" href="/languages/ruby/tests">
+              Running the Tests
+            </a>
+          </li>
+
+          <li class="">
+            <a class="redLink" href="/languages/ruby/learning">
+              Learning Ruby
+            </a>
+          </li>
+
+          <li class="">
+            <a class="redLink" href="/languages/ruby/resources">
+              Useful Ruby Resources
+            </a>
+          </li>
+
+          <li class="">
+            <a class="redLink" href="/languages/ruby/help">
+              Getting Help
+            </a>
+          </li>
+
+          <li class="">
+            <a class="redLink" href="/languages/ruby/contribute">
+              Contributing to Ruby on Exercism
+            </a>
+          </li>
+
+          <li class="">
+            <a class="redLink" href="/languages/ruby/todo">
+              Unimplemented Exercises
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="col-md-8 tab-content">
+      <div class="tab-pane active" id="exercises">
+        <p>
+          When you're logged in, you can say <code>exercism fetch ruby</code> to get
+          the next available exercise on the track.
+        </p>
+
+        <p>
+          Every time you submit a solution to an exercise, you will get the next in line the next time
+          you fetch.
+        </p>
+
+        <p>
+          If you want to try a specific exercise, you can always fetch it directly (commands
+          are listed below).
+        </p>
+
+        <p>
+          The exercises are ordered roughly in order of difficulty, but it's a bit haphazard.
+        </p>
+
+
+        <h3>Available Exercises</h3>
+        <ul class="available_exercises_listing">
+
+          <li>
+            <a href="/exercises/ruby/hello-world">Hello World</a>
+            <span class="tagline">Write a function that greets the user by name, or by saying "Hello, World!" if no name is given.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/hamming">Hamming</a>
+            <span class="tagline">Write a program that can calculate the Hamming difference between two DNA strands.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/gigasecond">Gigasecond</a>
+            <span class="tagline">Write a program that calculates the moment when someone has lived for 10^9 seconds.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/rna-transcription">Rna Transcription</a>
+            <span class="tagline">Write a program that, given a DNA strand, returns its RNA complement (per RNA transcription).</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/raindrops">Raindrops</a>
+            <span class="tagline">Write a program that converts a number to a string, the contents of which depend on the number's factors.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/difference-of-squares">Difference Of Squares</a>
+            <span class="tagline">Find the difference between the sum of the squares and the square of the sums of the first N natural numbers.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/pangram">Pangram</a>
+            <span class="tagline">Determine if a sentence is a pangram.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/sieve">Sieve</a>
+            <span class="tagline">Write a program that uses the Sieve of Eratosthenes to find all the primes from 2 up to a given number.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/roman-numerals">Roman Numerals</a>
+            <span class="tagline">Write a function to convert from normal numbers to Roman Numerals.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/robot-name">Robot Name</a>
+            <span class="tagline">Write a program that manages robot factory settings.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/nth-prime">Nth Prime</a>
+            <span class="tagline">Write a program that can tell you what the nth prime is.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/leap">Leap</a>
+            <span class="tagline">Write a program that will take a year and report if it is a leap year.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/grains">Grains</a>
+            <span class="tagline">Write a program that calculates the number of grains of wheat on a chessboard given that the number on each square doubles.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/word-count">Word Count</a>
+            <span class="tagline">Write a program that given a phrase can count the occurrences of each word in that phrase.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/bob">Bob</a>
+            <span class="tagline">Bob is a lackadaisical teenager. In conversation, his responses are very limited.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/run-length-encoding">Run Length Encoding</a>
+            <span class="tagline">Implement run-length encoding and decoding.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/binary">Binary</a>
+            <span class="tagline">Write a program that will convert a binary number, represented as a string (e.g. '101010'), to its decimal equivalent using first principles</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/accumulate">Accumulate</a>
+            <span class="tagline">Implement the `accumulate` operation, which, given a collection and an operation to perform on each element of the collection, returns a new collection containing the result of applying that operation to each element of the input collection.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/sum-of-multiples">Sum Of Multiples</a>
+            <span class="tagline">Write a program that, given a number, can find the sum of all the multiples of particular numbers up to but not including that number.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/grade-school">Grade School</a>
+            <span class="tagline">Write a small archiving program that stores students' names along with the grade that they are in.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/series">Series</a>
+            <span class="tagline">Write a program that will take a string of digits and give you all the contiguous substrings of length `n` in that string.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/phone-number">Phone Number</a>
+            <span class="tagline">Write a program that cleans up user-entered phone numbers so that they can be sent SMS messages.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/prime-factors">Prime Factors</a>
+            <span class="tagline">Compute the prime factors of a given natural number.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/strain">Strain</a>
+            <span class="tagline">Implement the `keep` and `discard` operation on collections. Given a collection and a predicate on the collection's elements, `keep` returns a new collection containing those elements where the predicate is true, while `discard` returns a new collection containing those elements where the predicate is false.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/etl">Etl</a>
+            <span class="tagline">We are going to do the `Transform` step of an Extract-Transform-Load.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/trinary">Trinary</a>
+            <span class="tagline">Write a program that will convert a trinary number, represented as a string (e.g. '102012'), to its decimal equivalent using first principles.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/beer-song">Beer Song</a>
+            <span class="tagline">Write a program which produces the lyrics to that beloved classic, that field-trip favorite: 99 Bottles of Beer on the Wall.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/bowling">Bowling</a>
+            <span class="tagline">Score a bowling game</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/space-age">Space Age</a>
+            <span class="tagline">Write a program that, given an age in seconds, calculates how old someone is in terms of a given planet's solar years.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/anagram">Anagram</a>
+            <span class="tagline">Write a program that, given a word and a list of possible anagrams, selects the correct sublist.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/binary-search-tree">Binary Search Tree</a>
+            <span class="tagline">Write a program that inserts numbers and searches in a binary tree.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/crypto-square">Crypto Square</a>
+            <span class="tagline">Implement the classic method for composing secret messages called a square code.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/clock">Clock</a>
+            <span class="tagline">Implement a clock that handles times without dates.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/alphametics">Alphametics</a>
+            <span class="tagline">Write a function to solve alphametics puzzles.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/rail-fence-cipher">Rail Fence Cipher</a>
+            <span class="tagline">Implement encoding and decoding for the rail fence cipher.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/acronym">Acronym</a>
+            <span class="tagline">Convert a long phrase to its acronym</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/scrabble-score">Scrabble Score</a>
+            <span class="tagline">Write a program that, given a word, computes the scrabble score for that word.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/nucleotide-count">Nucleotide Count</a>
+            <span class="tagline">Given a DNA string, compute how many times each nucleotide occurs in the string.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/flatten-array">Flatten Array</a>
+            <span class="tagline">Write a program that will take a nested list and returns a single list with all values except nil/null</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/hexadecimal">Hexadecimal</a>
+            <span class="tagline">Write a program that will convert a hexadecimal number, represented as a string (e.g. "10af8c"), to its decimal equivalent using first principles (i.e. no, you may not use built-in or external libraries to accomplish the conversion).</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/say">Say</a>
+            <span class="tagline">Write a program that will take a number from 0 to 999,999,999,999 and spell out that number in English.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/meetup">Meetup</a>
+            <span class="tagline">Calculate the date of meetups.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/queen-attack">Queen Attack</a>
+            <span class="tagline">Write a program that positions two queens on a chess board and indicates whether or not they are positioned so that they can attack each other.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/palindrome-products">Palindrome Products</a>
+            <span class="tagline">Write a program that can detect palindrome products in a given range.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/bracket-push">Bracket Push</a>
+            <span class="tagline">Make sure the brackets and braces all match.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/food-chain">Food Chain</a>
+            <span class="tagline">Write a program that generates the lyrics of the song 'I Know an Old Lady Who Swallowed a Fly'</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/matrix">Matrix</a>
+            <span class="tagline">Write a program that, given a string representing a matrix of numbers, can return the rows and columns of that matrix.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/saddle-points">Saddle Points</a>
+            <span class="tagline">Write a program that detects saddle points in a matrix.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/triangle">Triangle</a>
+            <span class="tagline">Write a program that can tell you if a triangle is equilateral, isosceles, or scalene.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/atbash-cipher">Atbash Cipher</a>
+            <span class="tagline">Create an implementation of the atbash cipher, an ancient encryption system created in the Middle East.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/house">House</a>
+            <span class="tagline">Write a program that outputs the nursery rhyme 'This is the House that Jack Built'.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/secret-handshake">Secret Handshake</a>
+            <span class="tagline">Write a program that will take a decimal number, and convert it to the appropriate sequence of events for a secret handshake.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/proverb">Proverb</a>
+            <span class="tagline">For want of a horseshoe nail, a kingdom was lost, or so the saying goes. Write a program that outputs the full text of this proverbial rhyme.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/ocr-numbers">Ocr Numbers</a>
+            <span class="tagline">Write a program that, given a 3 x 4 grid of pipes, underscores, and spaces, can determine which number is represented, or whether it is garbled.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/pig-latin">Pig Latin</a>
+            <span class="tagline">Implement a program that translates from English to Pig Latin</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/simple-linked-list">Simple Linked List</a>
+            <span class="tagline">Write a simple linked list implementation that uses Elements and a List</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/luhn">Luhn</a>
+            <span class="tagline">Write a program that can take a number and determine whether or not it is valid per the Luhn formula.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/simple-cipher">Simple Cipher</a>
+            <span class="tagline">Implement a simple shift cipher like Caesar and a more secure substitution cipher</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/wordy">Wordy</a>
+            <span class="tagline">Parse and evaluate simple math word problems returning the answer as an integer.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/allergies">Allergies</a>
+            <span class="tagline">Write a program that, given a person's allergy score, can tell them whether or not they're allergic to a given item, and their full list of allergies.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/poker">Poker</a>
+            <span class="tagline">Pick the best hand(s) from a list of poker hands.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/kindergarten-garden">Kindergarten Garden</a>
+            <span class="tagline">Write a program that, given a diagram, can tell you which plants each child in the kindergarten class is responsible for.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/linked-list">Linked List</a>
+            <span class="tagline">Implement a doubly linked list</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/pythagorean-triplet">Pythagorean Triplet</a>
+            <span class="tagline">There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product a * b * c.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/robot-simulator">Robot Simulator</a>
+            <span class="tagline">Write a robot simulator.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/twelve-days">Twelve Days</a>
+            <span class="tagline">Write a program that outputs the lyrics to 'The Twelve Days of Christmas'</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/circular-buffer">Circular Buffer</a>
+            <span class="tagline">A data structure that uses a single, fixed-size buffer as if it were connected end-to-end.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/largest-series-product">Largest Series Product</a>
+            <span class="tagline">Write a program that, when given a string of digits, can calculate the largest product for a contiguous substring of digits of length n.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/binary-search">Binary Search</a>
+            <span class="tagline">Write a program that implements a binary search algorithm.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/two-bucket">Two Bucket</a>
+            <span class="tagline">Given two buckets of different size, write a program to demonstrate how to measure an exact number of liters.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/pascals-triangle">Pascals Triangle</a>
+            <span class="tagline">Write a program that computes Pascal's triangle up to a given number of rows.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/custom-set">Custom Set</a>
+            <span class="tagline">Create a custom set type.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/minesweeper">Minesweeper</a>
+            <span class="tagline">Write a program that adds the numbers to a minesweeper board</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/scale-generator">Scale Generator</a>
+            <span class="tagline">Write a program that can generate musical scales, given a starting note and a set of intervals.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/protein-translation">Protein Translation</a>
+            <span class="tagline">Write a program that will translate RNA sequences into proteins.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/perfect-numbers">Perfect Numbers</a>
+            <span class="tagline">Determine if a number is perfect, abundant, or deficient based on Nicomachus' (60 - 120 CE) classification scheme for natural numbers.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/connect">Connect</a>
+            <span class="tagline">Compute the result for a game of Hex / Polygon</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/list-ops">List Ops</a>
+            <span class="tagline">Implement basic list operations</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/diamond">Diamond</a>
+            <span class="tagline">Given a letter, print a diamond starting with 'A' with the supplied letter at the widest point.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/all-your-base">All Your Base</a>
+            <span class="tagline">Write a program that will convert a number, represented as a sequence of digits in one base, to any other base.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/isogram">Isogram</a>
+            <span class="tagline">Determine if a word or phrase is an isogram.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/transpose">Transpose</a>
+            <span class="tagline">Write a program that takes input text and outputs it transposed.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/tournament">Tournament</a>
+            <span class="tagline">Tally the results of a small football competition.</span>
+          </li>
+
+          <li>
+            <a href="/exercises/ruby/dominoes">Dominoes</a>
+            <span class="tagline">Make a chain of dominoes.</span>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </div>
+</div>
+

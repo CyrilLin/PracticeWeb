@@ -10,7 +10,52 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161227030826) do
+ActiveRecord::Schema.define(version: 20161229140507) do
+
+  create_table "assignments", force: :cascade do |t|
+    t.string   "token",            null: false
+    t.integer  "user_id",          null: false
+    t.integer  "problem_id",       null: false
+    t.datetime "assign_date",      null: false
+    t.datetime "last_submit_date"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "user_id",          null: false
+    t.string   "content",          null: false
+    t.string   "commentable_type"
+    t.integer  "commentable_id"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "iterations", force: :cascade do |t|
+    t.string   "code"
+    t.datetime "submit_time"
+    t.integer  "assignment_id", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  create_table "languages", force: :cascade do |t|
+    t.string   "name",       null: false
+    t.string   "desc"
+    t.string   "long_desc"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "problems", force: :cascade do |t|
+    t.string   "name",        null: false
+    t.text     "desc"
+    t.text     "code"
+    t.text     "test"
+    t.integer  "language_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "name",                   default: "", null: false
